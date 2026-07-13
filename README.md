@@ -1,28 +1,4 @@
-# Twofish Chat-Verschluesselung - Android-Version (Kivy)
-
-Gleiche Funktion wie die Windows-Version - gleicher, gepruefter
-Twofish-Code (`twofish_cipher.py`, `twofish_cbc.py`, `chat_store.py`) -
-nur mit einer fuer Touch-Bedienung gebauten Oberflaeche (Kivy statt Tkinter).
-
-## Wichtiger Hinweis zur APK
-
-**Ich kann in dieser Sandbox-Umgebung keine fertige .apk-Datei erzeugen.**
-Das Bauen einer Android-APK erfordert das Android SDK, das Android NDK und
-Gradle (mehrere Gigabyte an Downloads von Google-Servern), und diese Umgebung
-hier hat nur eingeschraenkten Internetzugriff (u. a. auf PyPI/GitHub, aber
-nicht auf die Android-Downloadserver). Deshalb kann ich den Buildozer-Schritt,
-der die APK erzeugt, hier nicht ausfuehren.
-
-Was ich stattdessen getan habe:
-
-- Den kompletten Code geschrieben und **die komplette Verschluesselungs- und
-  Programmlogik hier bereits automatisiert getestet** (unter einem virtuellen
-  Display, mit simulierten Chat-Erstellungen, Verschluesseln/Entschluesseln
-  und Sortieren) - alles funktioniert wie erwartet.
-- Eine fertige `buildozer.spec` mitgeliefert, mit der sich aus genau diesem
-  Code in wenigen Schritten eine APK bauen laesst.
-
-## So bauen Sie selbst die APK (einmalig, ca. 15-30 Minuten)
+#  So bauen Sie selbst die APK (einmalig, ca. 15-30 Minuten)
 
 Buildozer laeuft nur unter Linux (auf Windows z. B. ueber WSL2 mit Ubuntu).
 
